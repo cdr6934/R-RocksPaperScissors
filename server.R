@@ -61,7 +61,7 @@ shinyServer(function(input, output) {
   observeEvent(input$paperBtn, {runComputation(2)})
   observeEvent(input$scissorsBtn, {runComputation(3)})
   
-  # Output
+  #### Output ####
   output$statusTextOutput <- renderText(v$computationResult)
   
   output$statusTextOutput2 <- renderText(printScore(v$score$Score[1],v$score$Score[2],v$score$Score[3]))
